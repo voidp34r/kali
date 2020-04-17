@@ -21,6 +21,9 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension webrender.synthwave-x-fluoromachine
 
+code --install-extension okteto.remote-kubernetes
+code --install-extension okteto.kubernetes-context
+
 code-insiders --install-extension ms-vscode.cpptools
 code-insiders --install-extension ms-python.python
 code-insiders --install-extension ms-dotnettools.csharp
