@@ -108,3 +108,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export PATH="$PATH:/snap/bin"
+
+# Example aliases
+alias bashconfig="code ~/.bashrc"
+alias update="sudo apt update"
+alias upgrade="sudo apt -y upgrade"
+alias ok="okteto"
+alias kube="kubectl"
+alias uplist="apt list --upgradable"

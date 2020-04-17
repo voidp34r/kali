@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && apt-cache search kali-linux
-sudo apt -y install curl git nano zsh gwet htop etherape snapd guake guake-indicator
+sudo apt -y install curl git nano zsh gwet htop etherape snapd guake guake-indicator fonts-firacode fonts-cacadia-code
 sudo apt -y install apt-transport-https ca-certificates gnupg-agent gnupg2 software-properties-common
 
 apt-cache show kali-linux-web |grep Depends
