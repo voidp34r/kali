@@ -19,6 +19,10 @@ echo "deb http://http.kali.org/kali kali-last-snapshot main non-free contrib" | 
 #kali-experimental (Packages which are under testing - often used with the rolling repository)
 echo "deb http://http.kali.org/kali kali-experimental main non-free contrib" | sudo tee -a /etc/apt/sources.list
 
+#install google chrome
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+
 #install vscode
 #The repository and key can also be installed manually with the following script:
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -37,7 +41,8 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 #   stable"
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian jessie stable"
 sudo apt-get update
-sudo apt-get -y install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose
+
 #If you would like to use Docker as a non-root user, you should now consider adding your user to the “docker” group with something like:
 sudo usermod -aG docker voidp34r
 
