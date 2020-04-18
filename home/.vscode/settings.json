@@ -1,4 +1,51 @@
 {
-    "git.autofetch": true,
-    "editor.fontLigatures": true
+  "editor.fontFamily": "'Fira Code','Cascadia Code','Droid Sans Mono', 'Droid Sans Fallback'",
+  "files.autoSaveDelay": 500,
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "vscode-icons",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.forceDownload": true,
+  "sync.forceUpload": true,
+  "sync.gist": "8627aa204c3f62c23450c2b001103c09",
+  "sync.quietSync": false,
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path.linux": "/home/voidp34r/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path.linux": "/home/voidp34r/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path.linux": "/home/voidp34r/.vs-kubernetes/tools/draft/linux-amd64/draft"
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  },
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "editor.codeActionsOnSave": {},
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Community Material Theme Ocean",
+  "workbench.preferredDarkColorTheme": "Community Material Theme Darker",
+  "workbench.preferredHighContrastColorTheme": "Community Material Theme Darker High Contrast",
+  "explorer.incrementalNaming": "smart",
+  "explorer.openEditors.visible": 3,
+  "debug.console.closeOnEnd": true,
+  "debug.inlineValues": true,
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  "debug.onTaskErrors": "showErrors",
+  "scm.alwaysShowActions": true,
+  "scm.alwaysShowProviders": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.env.linux": {
+    "NAME": "voidp34r"
+  },
+  "terminal.integrated.experimentalUseTitleEvent": true,
+  "terminal.integrated.rendererType": "experimentalWebgl",
+  "terminal.integrated.rightClickBehavior": "copyPaste",
+  "remote.downloadExtensionsLocally": true,
+  "editor.formatOnPaste": true,
+  // "terminal.integrated.shell.linux": "/",
 }
