@@ -15,6 +15,7 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microso
 sudo rm packages.microsoft.*
 
 # install opera
+wget -qO- https://deb.opera.com/archive.key | sudo apt-key add 
 sudo sh -c 'echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list.d/opera.list'
 
 # install docker
@@ -42,10 +43,7 @@ sudo apt -y install numix-* wm-icons xfwm4-theme-breeze obsidian-icon-theme node
 sudo apt -y install sound-icons oxygen-sounds
 
 sudo apt update
-sudo apt -y install code code-insiders
-
-sudo apt-get update
-sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose
+sudo apt -y install code code-insiders opera-stable google-chrome-stable
 
 sudo apt update
 sudo apt -y install etherape snapd guake guake-indicator fonts-firacode fonts-cacadia-code
